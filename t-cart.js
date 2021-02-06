@@ -78,7 +78,7 @@ const getProduct = async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const productId = urlParams.get("productId");
 
-  const response = await fetch(`http://localhost:3000/wines/${productId}`);
+  const response = await fetch(`https://danielewineshop.herokuapp.com/wines/${productId}`);
   const data = await response.json();
   console.log(data);
 
