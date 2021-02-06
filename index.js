@@ -76,7 +76,7 @@ function renderProductList(list) {
 // ASYNC AWAIT
 
 const getProduct = async () => {
-  //const response = await fetch(`http://localhost:3000/wines-list`);
+  //const response = await fetch(`http://localhost:3000/wines-list`);  // for local deployment
   const response = await fetch(`https://danielewineshop.herokuapp.com/wines-list`);
   const data = await response.json();
   console.log(data);
